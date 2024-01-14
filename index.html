@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Eternal Computer</title>
+
+    <!-- Shortcut Icon -->
+    <link rel="shorcut icon" href="img/logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Navbar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <a href="">
+          <img src="img/logo.png" alt="" />
+          <h4>Eternal Computer</h4>
+        </a>
+      </div>
+
+      <ul>
+        <li><a href="" class="nav-active">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+
+      <div class="account">
+        <div class="find">
+          <button><span class="material-symbols-outlined"> search </span></button>
+        </div>
+        <div class="shop-cart">
+          <button class="btn-cart"><span class="material-symbols-outlined"> shopping_cart </span></button>
+          <span class="badge">6</span>
+        </div>
+        <div class="user">
+          <button class="btn-lgn"><span class="material-symbols-outlined"> account_circle </span></button>
+        </div>
+        <div class="profile">
+          
+        </div>
+        <p>Dark/Light</p>
+        <label class="switch">
+          <input type="checkbox" id="checkBox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Login Page -->
+    <div id="login" class="login-container">
+      <form>
+        <h3>Eternal Account</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required />
+
+        <a href="">Forgot Password?</a>
+
+        <button class="login">Log In</button>
+        <p>Don't have any account yet?</p>
+
+        <div class="social">
+          <div class="fb">Sign Up</div>
+        </div>
+      </form>
+    </div>
+    <!-- Login Page -->
+
+    <!-- Shop Cart -->
+    <div id="shop-cart" class="login-container">
+      <div class="cart">
+        <h3>Shop Cart</h3>
+        <div class="box-product">
+          <div class="product">
+            <input type="checkbox" />
+            <div class="image">
+              <img src="img/prod1.jpg" alt="Product 1" />
+            </div>
+            <div class="desc">
+              <p><a href="">Intel Core I5 11400 2.60GHz</a></p>
+              <p>IDR 2.650.000</p>
+            </div>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+          <div class="product">
+            <input type="checkbox" />
+            <div class="image">
+              <img src="img/prod2.jpg" alt="Product 2" />
+            </div>
+            <div class="desc">
+              <p><a href="">MSI H410M Pro-VH</a></p>
+              <p>IDR 1.199.000</p>
+            </div>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+          <div class="product">
+            <input type="checkbox" />
+            <div class="image">
+              <img src="img/prod3.jpg" alt="Product 3" />
+            </div>
+            <div class="desc">
+              <p><a href="">Kingston HyperX Fury RGB 2x8GB DDR4</a></p>
+              <p>IDR 1.399.000</p>
+            </div>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+          <div class="product">
+            <input type="checkbox" />
+            <div class="image">
+              <img src="img/prod4.jpg" alt="Product 4" />
+            </div>
+            <div class="desc">
+              <p><a href="">MSI Geforce RTX 2060 Super Ventus OC 8GB</a></p>
+              <p>IDR 4.899.000</p>
+            </div>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+          <div class="product">
+            <input type="checkbox" />
+            <div class="image">
+              <img src="img/prod5.jpg" alt="Product 5" />
+            </div>
+            <div class="desc">
+              <p><a href="">Samsung 970 EVO SSD M.2 NVMe 2TB</a></p>
+              <p>IDR 4.299.000</p>
+            </div>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+          <div class="product">
+            <input type="checkbox" />
+            <div class="image">
+              <img src="img/prod6.jpeg" alt="Product 6" />
+            </div>
+            <div class="desc">
+              <p><a href="">Cooler Master Air MA620P</a></p>
+              <p>IDR 929.000</p>
+            </div>
+            <div class="counter">
+              <span class="down" onClick="decreaseCount(event, this)">-</span>
+              <input type="text" value="1" />
+              <span class="up" onClick="increaseCount(event, this)">+</span>
+            </div>
+          </div>
+        </div>
+        <footer class="cart-footer">
+          <input type="checkbox" />
+          <p>IDR 0</p>
+          <a href="">Checkout</a>
+        </footer>
+      </div>
+    </div>
+    <!-- Shop Cart -->
+
+    <!-- Floating Button -->
+    <div class="btn-pc">
+      <a href="">Build PC</a>
+    </div>
+    <!-- Floating Button -->
+
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Eternal Computer</h2>
+          <p class="sub-heading">Your Computer Store</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">Start From 5 Jt</h4>
+          <p class="item">Set PC Gaming</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">Start From 100 Rb</h4>
+          <p class="item">Gaming Gear</p>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- Popular Product -->
+      <section id="pop-product">
+        <h2>Popular Product</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="face face1 pop-1">
+              <div class="content">
+                <h3>Processor</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>Processor</h3>
+                <p>A processor is an integrated electronic circuit that performs the calculations that run a computer. A processor performs arithmetical, logical, input/output (I/O).</p>
+                <a href="" class="view">View Product</a>
+                <a href="" class="buy">Buy Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1 pop-2">
+              <div class="content">
+                <h3>PC Casing</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>PC Casing</h3>
+                <p>The casing is home to the computer's main hardware. Inside there is a motherboard with processor and memory. The casing is also a place to place the hard disk and cd-rom drive.</p>
+                <a href="" type="button">View Product</a>
+                <a href="" type="button">Buy Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="face face1 pop-3">
+              <div class="content">
+                <h3>Gaming Gear</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>Gaming Gear</h3>
+                <p>Additional equipment for playing games is often referred to as gaming equipment or gaming gear. This equipment includes keyboards, mice, headsets, mousepads, and gaming glasses.</p>
+                <a href="" type="button">View Product</a>
+                <a href="" type="button">Buy Product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular Product -->
+
+      <!-- Banner -->
+      <section id="banner">
+        <div class="banner">
+          <h3>Not sure which product are best for you?</h3>
+          <p>Take a minute. We’ll help you find it out.</p>
+          <a href="">Explore more</a>
+        </div>
+      </section>
+      <!-- Banner -->
+
+      <!-- Pamflet -->
+      <section id="pamflet">
+        <div class="pamflet">
+          <div class="box-pamflet">
+            <img src="img/logo.png" alt="Pamflet" />
+            <h3>Computer For All</h3>
+            <p>Photography, video, design, and social media. Eternal Computer has everything you need, wherever your imagination takes you.</p>
+            <a href="">View Product</a>
+          </div>
+        </div>
+      </section>
+      <!-- Pamflet -->
+    </div>
+
+    <footer class="main-footer">
+      <h6>Copyright 2022 Eternal Computer All Rights Reserved.</h6>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
